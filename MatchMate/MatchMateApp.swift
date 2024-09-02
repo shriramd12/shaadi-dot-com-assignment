@@ -10,11 +10,15 @@ import SwiftUI
 @main
 struct MatchMateApp: App {
     let persistenceController = PersistenceController.shared
+    let networkService = NetworkService.shared
 
     var body: some Scene {
         WindowGroup {
-            ProfileCardList()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ProfileCardList(
+                networkService: networkService,
+                viewContext: persistenceController.container.viewContext
+            )
+                
         }
     }
 }

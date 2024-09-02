@@ -18,6 +18,17 @@
 		3016CC222C8612B60012897C /* MatchMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC212C8612B60012897C /* MatchMateUITestsLaunchTests.swift */; };
 		3016CC302C86168F0012897C /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3016CC2F2C86168F0012897C /* CachedAsyncImage */; };
 		3016CC322C8617E50012897C /* ProfileCardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */; };
+		3016CC352C861A1D0012897C /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC342C861A1D0012897C /* NetworkServiceProtocol.swift */; };
+		3016CC382C861BC60012897C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3016CC372C861BC60012897C /* Alamofire */; };
+		3016CC3A2C861BC60012897C /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3016CC392C861BC60012897C /* AlamofireDynamic */; };
+		3016CC3C2C861BEC0012897C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC3B2C861BEC0012897C /* NetworkService.swift */; };
+		3016CC402C861DA30012897C /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC3F2C861DA30012897C /* ProfileModel.swift */; };
+		3016CC432C8620360012897C /* ProfileNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC422C8620360012897C /* ProfileNetworkService.swift */; };
+		3016CC452C8626110012897C /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC442C8626110012897C /* ProfileCard.swift */; };
+		3016CC472C8626D60012897C /* Profile+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC462C8626D60012897C /* Profile+.swift */; };
+		3016CC4D2C86398D0012897C /* ProfileCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC4C2C86398D0012897C /* ProfileCoreDataService.swift */; };
+		3016CC502C863EBD0012897C /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC4F2C863EBD0012897C /* ToastView.swift */; };
+		3016CC542C863F160012897C /* View+MatchMate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC532C863F160012897C /* View+MatchMate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,15 @@
 		3016CC1F2C8612B60012897C /* MatchMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMateUITests.swift; sourceTree = "<group>"; };
 		3016CC212C8612B60012897C /* MatchMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardListViewModel.swift; sourceTree = "<group>"; };
+		3016CC342C861A1D0012897C /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		3016CC3B2C861BEC0012897C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3016CC3F2C861DA30012897C /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		3016CC422C8620360012897C /* ProfileNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNetworkService.swift; sourceTree = "<group>"; };
+		3016CC442C8626110012897C /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
+		3016CC462C8626D60012897C /* Profile+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+.swift"; sourceTree = "<group>"; };
+		3016CC4C2C86398D0012897C /* ProfileCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoreDataService.swift; sourceTree = "<group>"; };
+		3016CC4F2C863EBD0012897C /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		3016CC532C863F160012897C /* View+MatchMate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+MatchMate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3016CC302C86168F0012897C /* CachedAsyncImage in Frameworks */,
+				3016CC3A2C861BC60012897C /* AlamofireDynamic in Frameworks */,
+				3016CC382C861BC60012897C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +104,8 @@
 		3016CBF32C8612B40012897C = {
 			isa = PBXGroup;
 			children = (
+				3016CC512C863ED20012897C /* Extensions */,
+				3016CC4E2C863EA90012897C /* CommonViews */,
 				3016CBFE2C8612B40012897C /* MatchMate */,
 				3016CC142C8612B60012897C /* MatchMateTests */,
 				3016CC1E2C8612B60012897C /* MatchMateUITests */,
@@ -102,13 +126,13 @@
 		3016CBFE2C8612B40012897C /* MatchMate */ = {
 			isa = PBXGroup;
 			children = (
+				3016CC3D2C861D710012897C /* ProfileCardList */,
+				3016CC332C861A0C0012897C /* Network */,
 				3016CBFF2C8612B40012897C /* MatchMateApp.swift */,
-				3016CC012C8612B40012897C /* ProfileCardList.swift */,
 				3016CC032C8612B50012897C /* Assets.xcassets */,
 				3016CC082C8612B50012897C /* Persistence.swift */,
 				3016CC0A2C8612B50012897C /* MatchMate.xcdatamodeld */,
 				3016CC052C8612B50012897C /* Preview Content */,
-				3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */,
 			);
 			path = MatchMate;
 			sourceTree = "<group>";
@@ -138,6 +162,53 @@
 			path = MatchMateUITests;
 			sourceTree = "<group>";
 		};
+		3016CC332C861A0C0012897C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3016CC342C861A1D0012897C /* NetworkServiceProtocol.swift */,
+				3016CC3B2C861BEC0012897C /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3016CC3D2C861D710012897C /* ProfileCardList */ = {
+			isa = PBXGroup;
+			children = (
+				3016CC3E2C861D8B0012897C /* Model */,
+				3016CC012C8612B40012897C /* ProfileCardList.swift */,
+				3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */,
+				3016CC422C8620360012897C /* ProfileNetworkService.swift */,
+				3016CC4C2C86398D0012897C /* ProfileCoreDataService.swift */,
+			);
+			path = ProfileCardList;
+			sourceTree = "<group>";
+		};
+		3016CC3E2C861D8B0012897C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3016CC3F2C861DA30012897C /* ProfileModel.swift */,
+				3016CC442C8626110012897C /* ProfileCard.swift */,
+				3016CC462C8626D60012897C /* Profile+.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3016CC4E2C863EA90012897C /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				3016CC4F2C863EBD0012897C /* ToastView.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		3016CC512C863ED20012897C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3016CC532C863F160012897C /* View+MatchMate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +227,8 @@
 			name = MatchMate;
 			packageProductDependencies = (
 				3016CC2F2C86168F0012897C /* CachedAsyncImage */,
+				3016CC372C861BC60012897C /* Alamofire */,
+				3016CC392C861BC60012897C /* AlamofireDynamic */,
 			);
 			productName = MatchMate;
 			productReference = 3016CBFC2C8612B40012897C /* MatchMate.app */;
@@ -231,6 +304,7 @@
 			mainGroup = 3016CBF32C8612B40012897C;
 			packageReferences = (
 				3016CC2E2C86168F0012897C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				3016CC362C861A820012897C /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3016CBFD2C8612B40012897C /* Products */;
 			projectDirPath = "";
@@ -274,11 +348,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3016CC502C863EBD0012897C /* ToastView.swift in Sources */,
 				3016CC322C8617E50012897C /* ProfileCardListViewModel.swift in Sources */,
 				3016CC092C8612B50012897C /* Persistence.swift in Sources */,
+				3016CC352C861A1D0012897C /* NetworkServiceProtocol.swift in Sources */,
 				3016CC022C8612B40012897C /* ProfileCardList.swift in Sources */,
 				3016CC0C2C8612B50012897C /* MatchMate.xcdatamodeld in Sources */,
+				3016CC452C8626110012897C /* ProfileCard.swift in Sources */,
+				3016CC472C8626D60012897C /* Profile+.swift in Sources */,
+				3016CC432C8620360012897C /* ProfileNetworkService.swift in Sources */,
+				3016CC542C863F160012897C /* View+MatchMate.swift in Sources */,
+				3016CC4D2C86398D0012897C /* ProfileCoreDataService.swift in Sources */,
 				3016CC002C8612B40012897C /* MatchMateApp.swift in Sources */,
+				3016CC3C2C861BEC0012897C /* NetworkService.swift in Sources */,
+				3016CC402C861DA30012897C /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +701,14 @@
 				minimumVersion = 2.1.1;
 			};
 		};
+		3016CC362C861A820012897C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -625,6 +716,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3016CC2E2C86168F0012897C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
 			productName = CachedAsyncImage;
+		};
+		3016CC372C861BC60012897C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3016CC362C861A820012897C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3016CC392C861BC60012897C /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3016CC362C861A820012897C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 
