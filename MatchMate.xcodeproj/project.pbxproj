@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3016CC002C8612B40012897C /* MatchMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CBFF2C8612B40012897C /* MatchMateApp.swift */; };
-		3016CC022C8612B40012897C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC012C8612B40012897C /* ContentView.swift */; };
+		3016CC022C8612B40012897C /* ProfileCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC012C8612B40012897C /* ProfileCardList.swift */; };
 		3016CC042C8612B50012897C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016CC032C8612B50012897C /* Assets.xcassets */; };
 		3016CC072C8612B50012897C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3016CC062C8612B50012897C /* Preview Assets.xcassets */; };
 		3016CC092C8612B50012897C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC082C8612B50012897C /* Persistence.swift */; };
@@ -16,6 +16,8 @@
 		3016CC162C8612B60012897C /* MatchMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC152C8612B60012897C /* MatchMateTests.swift */; };
 		3016CC202C8612B60012897C /* MatchMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC1F2C8612B60012897C /* MatchMateUITests.swift */; };
 		3016CC222C8612B60012897C /* MatchMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC212C8612B60012897C /* MatchMateUITestsLaunchTests.swift */; };
+		3016CC302C86168F0012897C /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3016CC2F2C86168F0012897C /* CachedAsyncImage */; };
+		3016CC322C8617E50012897C /* ProfileCardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		3016CBFC2C8612B40012897C /* MatchMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3016CBFF2C8612B40012897C /* MatchMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMateApp.swift; sourceTree = "<group>"; };
-		3016CC012C8612B40012897C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3016CC012C8612B40012897C /* ProfileCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardList.swift; sourceTree = "<group>"; };
 		3016CC032C8612B50012897C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3016CC062C8612B50012897C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3016CC082C8612B50012897C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		3016CC1B2C8612B60012897C /* MatchMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3016CC1F2C8612B60012897C /* MatchMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMateUITests.swift; sourceTree = "<group>"; };
 		3016CC212C8612B60012897C /* MatchMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3016CC302C86168F0012897C /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,11 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				3016CBFF2C8612B40012897C /* MatchMateApp.swift */,
-				3016CC012C8612B40012897C /* ContentView.swift */,
+				3016CC012C8612B40012897C /* ProfileCardList.swift */,
 				3016CC032C8612B50012897C /* Assets.xcassets */,
 				3016CC082C8612B50012897C /* Persistence.swift */,
 				3016CC0A2C8612B50012897C /* MatchMate.xcdatamodeld */,
 				3016CC052C8612B50012897C /* Preview Content */,
+				3016CC312C8617E50012897C /* ProfileCardListViewModel.swift */,
 			);
 			path = MatchMate;
 			sourceTree = "<group>";
@@ -149,6 +154,9 @@
 			dependencies = (
 			);
 			name = MatchMate;
+			packageProductDependencies = (
+				3016CC2F2C86168F0012897C /* CachedAsyncImage */,
+			);
 			productName = MatchMate;
 			productReference = 3016CBFC2C8612B40012897C /* MatchMate.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 3016CBF32C8612B40012897C;
+			packageReferences = (
+				3016CC2E2C86168F0012897C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 3016CBFD2C8612B40012897C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3016CC322C8617E50012897C /* ProfileCardListViewModel.swift in Sources */,
 				3016CC092C8612B50012897C /* Persistence.swift in Sources */,
-				3016CC022C8612B40012897C /* ContentView.swift in Sources */,
+				3016CC022C8612B40012897C /* ProfileCardList.swift in Sources */,
 				3016CC0C2C8612B50012897C /* MatchMate.xcdatamodeld in Sources */,
 				3016CC002C8612B40012897C /* MatchMateApp.swift in Sources */,
 			);
@@ -596,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3016CC2E2C86168F0012897C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3016CC2F2C86168F0012897C /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3016CC2E2C86168F0012897C /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3016CC0A2C8612B50012897C /* MatchMate.xcdatamodeld */ = {

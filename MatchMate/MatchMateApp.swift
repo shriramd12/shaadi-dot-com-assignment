@@ -13,7 +13,7 @@ struct MatchMateApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProfileCardList()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

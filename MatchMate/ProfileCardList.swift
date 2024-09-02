@@ -7,8 +7,9 @@
 
 import SwiftUI
 import CoreData
+import CachedAsyncImage
 
-struct ContentView: View {
+struct ProfileCardList: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -17,31 +18,38 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+        List {
+            profileCardItem()
         }
     }
 
+    @ViewBuilder func profileCardItem() -> some View {
+        VStack(content: {
+            CachedAsyncImage(url: URL(string: "https://randomuser.me/api/portraits/women/37.jpg"), content: { image in
+                image
+            }, placeholder: {
+                Image("photo.artframe")
+            }).frame(width: 128, height: 128)
+            Text("Jon Doe")
+            HStack(content: {
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "checkmark")
+                })
+                .buttonBorderShape(ButtonBorderShape.circle)
+                .buttonStyle(.borderedProminent)
+                .tint(.green)
+                .controlSize(.large)
+                Spacer()
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "xmark")
+                })
+                .buttonBorderShape(ButtonBorderShape.circle)
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
+                .controlSize(.large)
+            })
+        })
+    }
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
@@ -80,7 +88,3 @@ private let itemFormatter: DateFormatter = {
     formatter.timeStyle = .medium
     return formatter
 }()
-
-#Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-}
